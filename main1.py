@@ -9,14 +9,14 @@ def cm_to_inch() :
    answer_int = int(answer_str)
    conversion = answer_int * 0.394
 
-   print("{conversion}" + "inch")
+   print(f"{conversion} inch")
 
 def inch_to_cm() :
     answer_str = input("Quelle est votre valeur à convertir de inch vers cm ? ")
     answer_int = int(answer_str)
     conversion = answer_int * 2.54
 
-    print("{conversion}" + "cm")
+    print(f"{conversion} cm")
 
 
 
@@ -40,7 +40,7 @@ def Question() :
 Question()
 continuer = True   
 while continuer:
-    choix = input("Voulez-vous continuer ? (Taper Oui pour continuer")
+    choix = input("Voulez-vous continuer ? (Taper Oui pour continuer)")
     if choix not in ("Oui", "oui" ):
         continuer = False
     if continuer == True:
