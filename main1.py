@@ -1,16 +1,22 @@
+# faire un convertisseur livre / pouce avec question d'entrée.
+
+from ast import While
+from re import A
+
+
 def cm_to_inch() :
    answer_str = input("Quelle est votre valeur à convertir de cm vers inch ?")
    answer_int = int(answer_str)
    conversion = answer_int * 0.394
 
-   print(conversion "inch")
+   print("{conversion}" + "inch")
 
 def inch_to_cm() :
     answer_str = input("Quelle est votre valeur à convertir de inch vers cm ? ")
     answer_int = int(answer_str)
     conversion = answer_int * 2.54
 
-    print(conversion "cm")
+    print("{conversion}" + "cm")
 
 
 
