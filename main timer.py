@@ -12,6 +12,8 @@ def cooking_choices() :
             duration = 6
         elif cook == "durs" :
             duration = 9
+        else :
+            duration = 0
     
     cooking_time = duration * 60
     return cooking_time
@@ -36,11 +38,3 @@ def timer(cooking_time) :
 
 cooking_time = cooking_choices()
 timer(cooking_time)
-
-
-
-
-
-    
-
-
