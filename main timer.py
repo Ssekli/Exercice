@@ -1,4 +1,3 @@
-from asyncio.events import BaseDefaultEventLoopPolicy
 import time
 
 
