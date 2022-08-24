@@ -6,7 +6,6 @@ import os
 import time
 import random
 
-TIME = 3
 
 def clear_screen() :
     if(os.name == "posix"):
