@@ -2,7 +2,7 @@
 
 
 
-print("Quelle est la devise américaine  ? ")
+'''print("Quelle est la devise américaine  ? ")
 print("a : Dollar")
 print("b : Euro")
 print("c : Livre")
@@ -23,20 +23,20 @@ answer = input("Votre réponse :")
 if answer == "c" :
     print("Bonne réponse")
 else :
-    print("Mauvaise réponse")
+    print("Mauvaise réponse")'''
 
 
 def ask_questions(question, a1, a2, a3, a4, right_answer) :
-    print(question)
-    print(a1)
-    print(a2)
-    print(a3)
-    print(a4)
+    print("Question :", question)
+    print("a :", a1)
+    print("b :", a2)
+    print("c :", a3)
+    print("d :", a4)
     answer = input("Votre réponse :")
     if answer == right_answer :
         print("Bonne réponse")
     else :
         print("Mauvaise réponse")
 
-ask_questions("Quelle est la capitale de la France ? ","a : Marseille", "b : Lille","c : Paris", "d : Dunkerque", "c" )
-ask_questions("Quelle est la capitale de l'Italie' ? ", "a : Vienne", "b : Rome", "c : Turin", "d : Dunkerque", "b")
+ask_questions("Quelle est la capitale de la France ? ","Marseille", "Lille","Paris", "Dunkerque", "c" )
+ask_questions("Quelle est la capitale de l'Italie' ? ", "Vienne", "Rome", "Turin", "Dunkerque", "b")
