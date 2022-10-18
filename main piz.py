@@ -10,7 +10,7 @@ def add_piz() :
 
 def show_piz(n_1st=-1) :
     pizzas.sort(key=sorting_order)
-   # if n_1st != -1 :
+    #if n_1st != -1 :
     #    pizzas[0 : n_1st]
     if not pizzas :
         print ("No Pizzas")
