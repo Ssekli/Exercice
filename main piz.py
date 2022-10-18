@@ -8,7 +8,10 @@ def add_piz() :
     else :
         pizzas.append(new_pizz)
 
-def show_piz() :
+def show_piz(n_1st=-1) :
+    pizzas.sort(key=sorting_order)
+   # if n_1st != -1 :
+    #    pizzas[0 : n_1st]
     if not pizzas :
         print ("No Pizzas")
     else :
@@ -19,6 +22,8 @@ def show_piz() :
         print("1st pizza", pizzas[0])
         print("last pizza", pizzas[-1])
 
-show_piz()
+def sorting_order(e) :
+    return len(e)
+
 add_piz()
-show_piz()
+show_piz(2)
