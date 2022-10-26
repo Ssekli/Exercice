@@ -15,6 +15,19 @@
 #
 # 4 questions
 
+def ask_numerical_answer(min, max) :
+        reponse_str = input(f"Votre réponse entre {min} et {max} : ")
+        try :
+            reponse_int = int(reponse_str)
+            if min <= reponse_int <= max :
+                return reponse_int
+
+            print(f"ERREUR entrez un nombre en {min} et {max}")
+
+        except :
+            print("Erreur : entrez un chiffre")
+        return ask_numerical_answer(min, max)
+
 def poser_question(question):
     choix = question[1]
     right_answer = question[2]
@@ -24,8 +37,8 @@ def poser_question(question):
     for i in range (len(choix)) :
         print(f"{i+1}-  ", choix[i])
     print()
-    reponse_str = input(f"Votre réponse entre 1 et {i+1} : ")
-    reponse_int = int(reponse_str)
+
+    reponse_int = ask_numerical_answer(1, len(choix))
 
     if choix[reponse_int-1].lower() == right_answer.lower():
         print("Bonne réponse")
